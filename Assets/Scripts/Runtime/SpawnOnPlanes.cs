@@ -69,35 +69,8 @@ public class SpawnOnPlanes : MonoBehaviour
                     //spawnObject.transform.localScale = new Vector3(0.03f, 0.03f, 0.03f);
                 }
 
-                    //else
-                    //{
-
-
-                    //    print("checking for placed meal");
-                    //    if (mealPlaced)
-                    //    {
-                    //        // Drop what we're holding
-                    //        Destroy(mealObject);
-                    //        mealPlaced = false;
-                    //    }
-                    //    else 
-                    //    {
-                    //        print(hits[0]);
-                    //        print("Trackable tag: " + hits[0].trackable.gameObject.tag);
-                    //        print("Trackable name: " + hits[0].trackable.gameObject.name);
-                    //        print("Trackable pose: " + hits[0].trackable.transform.position + ", " + hits[0].trackable.gameObject.transform.rotation);
-
-                    //        if (hits[0].trackable.gameObject.CompareTag("PlaceableSurface")) {
-                    //            print("Trying to place meal on placeable surface");
-                    //            // Place the object
-                    //            mealObject = Instantiate(MealPrefab, hits[0].trackable.gameObject.transform);
-                    //            //spawnObject.transform.position = hitPose.position;
-                    //            mealPlaced = true;
-                    //        }
-
-                    //    }
-                    //}
-                }
+                   
+            }
         }
     }
 }

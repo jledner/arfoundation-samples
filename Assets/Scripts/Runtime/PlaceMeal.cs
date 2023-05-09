@@ -18,6 +18,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
         public GameObject MealPrefab;
         public GameObject mealObject;
         private ChangeMeal changeMeal;
+        private SpawnOnPlanes spawnOnPlanes;
         public GameObject[] objectsToDelete;
 
         public bool ARStarted;
@@ -25,6 +26,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
         void Start()
         {
             changeMeal = FindObjectOfType<ChangeMeal>();
+            spawnOnPlanes = FindObjectOfType<SpawnOnPlanes>();
         }
 
         public void InstantiateMeal(RaycastHit hit)
@@ -73,7 +75,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                             MealPrefab = changeMeal.NewMealPrefab;
                             mealObject = Instantiate(MealPrefab, hit.point, Quaternion.identity);
                             mealObject.transform.localScale = new Vector3(.2f, .2f, .2f);
-                            //mealObject.transform.SetParent(parentTransform);
+                            mealObject.transform.SetParent(parentTransform);
                             mealObject.tag = "Meal";
                         }
 
