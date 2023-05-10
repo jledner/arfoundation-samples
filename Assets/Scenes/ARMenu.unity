@@ -590,6 +590,7 @@ MonoBehaviour:
     type: 3}
   MealPrefab: {fileID: 5387416623880717981, guid: 7e74ab4f5d13f4c0fbf036fea800b634,
     type: 3}
+  spawnObject: {fileID: 0}
 --- !u!114 &75659854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1920,7 +1921,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &384353136
 MonoBehaviour:

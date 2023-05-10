@@ -73,9 +73,10 @@ namespace UnityEngine.XR.ARFoundation.Samples
                         {
                             print("PlaceableSurface click detected");
                             MealPrefab = changeMeal.NewMealPrefab;
-                            mealObject = Instantiate(MealPrefab, hit.point, Quaternion.identity);
+                            mealObject = Instantiate(MealPrefab, focusedObject.transform.position, Quaternion.identity);
+                            //mealObject.transform.localScale /= focusedObject.transform.localScale.x;
                             mealObject.transform.localScale = new Vector3(.2f, .2f, .2f);
-                            mealObject.transform.SetParent(parentTransform);
+                            mealObject.transform.SetParent(focusedObject.transform, true);
                             mealObject.tag = "Meal";
                         }
 

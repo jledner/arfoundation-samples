@@ -12,7 +12,7 @@ public class SpawnOnPlanes : MonoBehaviour
     GameObject PlacedPrefab;
     [SerializeField]
     GameObject MealPrefab;
-    GameObject spawnObject;
+    public GameObject spawnObject;
     GameObject mealObject;
     bool mealPlaced = false;
     private ChangeMeal changeMeal;
